@@ -1,0 +1,24 @@
+﻿
+<h3>Create A Customer</h3>
+
+<form id="createCustomerForm">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address" placeholder="Enter address">
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        SetupCreateCustomer('https://localhost:7088/api/customer');
+    });
+</script>

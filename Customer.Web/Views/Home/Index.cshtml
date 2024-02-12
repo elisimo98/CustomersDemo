@@ -1,0 +1,23 @@
+﻿
+<h3>Customers</h3>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col" id="customerListContainer">
+            <ul>
+                <li class="list-group-item p-2">
+                    <span class="customer-name"></span>
+                    <button class="btn btn-warning customer-delete">
+                        Delete
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        SetupGetCustomers('https://localhost:7088/api/customer');
+    });
+</script>
